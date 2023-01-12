@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#generates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#generates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#machine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#hasCriticality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#hasCriticality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#criticaly"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#hasMaintenanceCost -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#hasMaintenanceCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenanceCost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#hasMaintenanceTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#hasMaintenanceTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenanceTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#specializedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#specializedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failureType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#wasInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#wasInfluencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#criticaly"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#machine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenanceCost"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenanceTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#machine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenance"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#datetimeFailure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#datetimeFailure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#idFailure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#idFailure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#idMachine -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#idMachine">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#criticaly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#criticaly"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failureType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failureType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#failure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#machine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#machine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenanceCost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenanceCost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenanceTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenanceTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izaqueesteves/ontologies/2022/2/untitled-ontology-3#maintenance"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
